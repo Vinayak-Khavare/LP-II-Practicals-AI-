@@ -1,0 +1,9 @@
+sudo apt update -y
+sudo apt install python3-pip python3-venv git -y
+git clone https://github.com/Vinayak-Khavare/LP-II-Chatbot-AI.git
+cd LP-II-Chatbot-AI/
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 8000

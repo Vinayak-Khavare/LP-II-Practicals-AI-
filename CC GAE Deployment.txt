@@ -1,0 +1,10 @@
+Create project
+Api and services->app engine admin api->enable
+app engine->create application->region
+gcloud shell->
+		git clone <-project->
+		gcloud app deploy
+
+gcloud projects add-iam-policy-binding velvety-broker-459203-r3 \
+  --member="serviceAccount:velvety-broker-459203-r3@appspot.gserviceaccount.com" \
+  --role="roles/storage.admin"
